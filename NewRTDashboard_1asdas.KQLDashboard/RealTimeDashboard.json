@@ -1,0 +1,50 @@
+{
+  "schema_version": 93,
+  "flavor": "RTDashboard_Regular",
+  "changeDetection": {
+    "kind": "liveUpdates",
+    "minRefreshRate": "30s",
+    "fallbackRefreshRate": "1m",
+    "minRefreshRate_V2": "30s",
+    "minRefreshRate_V3": "30s"
+  },
+  "tiles": [],
+  "baseQueries": [],
+  "parameters": [
+    {
+      "kind": "duration",
+      "id": "3ce4cbd4-9779-4dc3-a962-580c43faa158",
+      "displayName": "Time range",
+      "description": "",
+      "beginVariableName": "_startTime",
+      "endVariableName": "_endTime",
+      "defaultValue": {
+        "kind": "dynamic",
+        "count": 1,
+        "unit": "hours"
+      },
+      "showOnPages": {
+        "kind": "all"
+      }
+    }
+  ],
+  "dataSources": [
+    {
+      "kind": "kusto-trident",
+      "name": "Guy",
+      "clusterUri": "https://trd-rdqyj79zzpt56mfmz4.z6.kusto.fabric.microsoft.com",
+      "databaseArtifactId": "f1d2a96f-5e6e-4587-8135-b494932ebeb3",
+      "database": "f1d2a96f-5e6e-4587-8135-b494932ebeb3",
+      "workspace": "00000000-0000-0000-0000-000000000000",
+      "id": "8e68d1de-9819-4cfd-bf32-754ccf01cf93"
+    }
+  ],
+  "pages": [
+    {
+      "name": "Page 1",
+      "id": "b0126152-56e5-4932-8bbc-d6ee60bc105d"
+    }
+  ],
+  "queries": [],
+  "embeddedApps": []
+}
